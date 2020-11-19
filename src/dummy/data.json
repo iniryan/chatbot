@@ -1,0 +1,1243 @@
+{
+    "grade": [
+        {
+            "id": "1",
+            "name": "sekolah dasar",
+            "short": "SD",
+            "status": "1",
+            "created_at": "2020-09-15 11:18:38",
+            "updated_at": "2020-09-15 11:18:38"
+        },
+        {
+            "id": "2",
+            "name": "sekolah menengah pertama",
+            "short": "SMP",
+            "status": "1",
+            "created_at": "2020-09-15 11:18:38",
+            "updated_at": "2020-09-15 12:29:59"
+        },
+        {
+            "id": "3",
+            "name": "sekolah menengah atas",
+            "short": "SMA",
+            "status": "1",
+            "created_at": "2020-09-15 11:18:51",
+            "updated_at": "2020-09-15 11:19:26"
+        }
+    ],
+    "keyword_grade": [
+        {
+            "id": "1",
+            "grade_id": "1",
+            "keyword": "sd"
+        },
+        {
+            "id": "2",
+            "grade_id": "1",
+            "keyword": "sekolah dasar"
+        },
+        {
+            "id": "3",
+            "grade_id": "2",
+            "keyword": "sekolah menengah pertama"
+        },
+        {
+            "id": "4",
+            "grade_id": "2",
+            "keyword": "smp"
+        },
+        {
+            "id": "5",
+            "grade_id": "3",
+            "keyword": "sekolah menengah atas"
+        },
+        {
+            "id": "6",
+            "grade_id": "3",
+            "keyword": "sma"
+        }
+    ],
+    "major": [
+        {
+            "id": "1",
+            "name": "matematika",
+            "short": "MAT",
+            "status": "1",
+            "created_at": "2020-08-13 11:46:31",
+            "updated_at": "2020-08-13 11:47:40"
+        },
+        {
+            "id": "2",
+            "name": "bahasa indonesia",
+            "short": "BI",
+            "status": "1",
+            "created_at": "2020-08-13 11:46:31",
+            "updated_at": "2020-08-13 11:47:40"
+        },
+        {
+            "id": "3",
+            "name": "ipa",
+            "short": "IPA",
+            "status": "1",
+            "created_at": "2020-08-13 11:46:48",
+            "updated_at": "2020-08-13 11:47:40"
+        }
+    ],
+    "keyword_major": [
+        {
+            "id": "1",
+            "major_id": "1",
+            "keyword": "mat"
+        },
+        {
+            "id": "2",
+            "major_id": "1",
+            "keyword": "matematika"
+        },
+        {
+            "id": "3",
+            "major_id": "1",
+            "keyword": "math"
+        },
+        {
+            "id": "4",
+            "major_id": "1",
+            "keyword": "matematik"
+        },
+        {
+            "id": "5",
+            "major_id": "1",
+            "keyword": "mtk"
+        },
+        {
+            "id": "6",
+            "major_id": "1",
+            "keyword": "maths"
+        },
+        {
+            "id": "7",
+            "major_id": "2",
+            "keyword": "bahasa indonesia"
+        },
+        {
+            "id": "8",
+            "major_id": "2",
+            "keyword": "bi"
+        },
+        {
+            "id": "9",
+            "major_id": "2",
+            "keyword": "bindo"
+        },
+        {
+            "id": "10",
+            "major_id": "2",
+            "keyword": "bind"
+        },
+        {
+            "id": "11",
+            "major_id": "3",
+            "keyword": "ipa"
+        },
+        {
+            "id": "12",
+            "major_id": "3",
+            "keyword": "ilmu pengetahuan alam"
+        },
+        {
+            "id": "13",
+            "major_id": "3",
+            "keyword": "sains"
+        }
+    ],
+    "bc": [
+        {
+            "id": "1",
+            "name": "Penjumlahan bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:53:58"
+        },
+        {
+            "id": "2",
+            "name": "Pengurangan bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:05"
+        },
+        {
+            "id": "3",
+            "name": "Perkalian  bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:14"
+        },
+        {
+            "id": "4",
+            "name": "Mengarang  bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:19"
+        },
+        {
+            "id": "5",
+            "name": "Puisi  bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:22"
+        },
+        {
+            "id": "6",
+            "name": "Pantun  bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:25"
+        },
+        {
+            "id": "7",
+            "name": "Fotosintesis  bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:28"
+        },
+        {
+            "id": "8",
+            "name": "Autotomi  bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:31"
+        },
+        {
+            "id": "9",
+            "name": "Perkembangbiakan  bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:34"
+        },
+        {
+            "id": "10",
+            "name": "Matriks  bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:38"
+        },
+        {
+            "id": "11",
+            "name": "Aljabar  bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:54:43"
+        },
+        {
+            "id": "12",
+            "name": "Bilangan Prima bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "13",
+            "name": "Deskripsi bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "14",
+            "name": "Definisi bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "15",
+            "name": "LHO bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "16",
+            "name": "Atom bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "17",
+            "name": "Reproduksi bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "18",
+            "name": "Tata Surya bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "19",
+            "name": "Himpunan bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "20",
+            "name": "Lingkaran bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "21",
+            "name": "Garis Singgung bc",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "22",
+            "name": "Perbedaan teks bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:44"
+        },
+        {
+            "id": "23",
+            "name": "Rujukan bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:45"
+        },
+        {
+            "id": "24",
+            "name": "Eksplanasi bc",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:45"
+        },
+        {
+            "id": "25",
+            "name": "Senyawa bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:55:45"
+        },
+        {
+            "id": "26",
+            "name": "Tabel Periodik bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:56:09"
+        },
+        {
+            "id": "27",
+            "name": "Asam Basa bc",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:56:16"
+        }
+    ],
+    "bc_topic": [
+        {
+            "id": "1",
+            "bc_id": "1",
+            "topic_id": "1",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "2",
+            "bc_id": "2",
+            "topic_id": "2",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "3",
+            "bc_id": "3",
+            "topic_id": "3",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "4",
+            "bc_id": "4",
+            "topic_id": "4",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "5",
+            "bc_id": "5",
+            "topic_id": "5",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "6",
+            "bc_id": "6",
+            "topic_id": "6",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "7",
+            "bc_id": "7",
+            "topic_id": "7",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "8",
+            "bc_id": "8",
+            "topic_id": "8",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "9",
+            "bc_id": "9",
+            "topic_id": "9",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "10",
+            "bc_id": "10",
+            "topic_id": "10",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "11",
+            "bc_id": "11",
+            "topic_id": "11",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "12",
+            "bc_id": "12",
+            "topic_id": "12",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "13",
+            "bc_id": "13",
+            "topic_id": "13",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "14",
+            "bc_id": "14",
+            "topic_id": "14",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "15",
+            "bc_id": "15",
+            "topic_id": "15",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "16",
+            "bc_id": "16",
+            "topic_id": "16",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "17",
+            "bc_id": "17",
+            "topic_id": "17",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "18",
+            "bc_id": "18",
+            "topic_id": "18",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "19",
+            "bc_id": "19",
+            "topic_id": "19",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "20",
+            "bc_id": "20",
+            "topic_id": "20",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "21",
+            "bc_id": "21",
+            "topic_id": "21",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "22",
+            "bc_id": "22",
+            "topic_id": "22",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "23",
+            "bc_id": "23",
+            "topic_id": "23",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "24",
+            "bc_id": "24",
+            "topic_id": "24",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "25",
+            "bc_id": "25",
+            "topic_id": "25",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "26",
+            "bc_id": "26",
+            "topic_id": "26",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "27",
+            "bc_id": "27",
+            "topic_id": "27",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        }
+    ],
+    "dpr": [
+        {
+            "id": "1",
+            "name": "Penjumlahan dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:17"
+        },
+        {
+            "id": "2",
+            "name": "Pengurangan dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:17"
+        },
+        {
+            "id": "3",
+            "name": "Perkalian dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:18"
+        },
+        {
+            "id": "4",
+            "name": "Mengarang dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:19"
+        },
+        {
+            "id": "5",
+            "name": "Puisi dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:19"
+        },
+        {
+            "id": "6",
+            "name": "Pantun dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:20"
+        },
+        {
+            "id": "7",
+            "name": "Fotosintesis dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:20"
+        },
+        {
+            "id": "8",
+            "name": "Autotomi dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:20"
+        },
+        {
+            "id": "9",
+            "name": "Perkembangbiakan dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "1",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:20"
+        },
+        {
+            "id": "10",
+            "name": "Matriks dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:21"
+        },
+        {
+            "id": "11",
+            "name": "Aljabar dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:21"
+        },
+        {
+            "id": "12",
+            "name": "Bilangan Prima dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:22"
+        },
+        {
+            "id": "13",
+            "name": "Deskripsi dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:22"
+        },
+        {
+            "id": "14",
+            "name": "Definisi dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:22"
+        },
+        {
+            "id": "15",
+            "name": "LHO dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:22"
+        },
+        {
+            "id": "16",
+            "name": "Atom dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:23"
+        },
+        {
+            "id": "17",
+            "name": "Reproduksi dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:23"
+        },
+        {
+            "id": "18",
+            "name": "Tata Surya dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "2",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:23"
+        },
+        {
+            "id": "19",
+            "name": "Himpunan dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:23"
+        },
+        {
+            "id": "20",
+            "name": "Lingkaran",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "21",
+            "name": "Garis Singgung dpr",
+            "image": "placeholder.jpg",
+            "major_id": "1",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:23"
+        },
+        {
+            "id": "22",
+            "name": "Perbedaan teks dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:24"
+        },
+        {
+            "id": "23",
+            "name": "Rujukan dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:24"
+        },
+        {
+            "id": "24",
+            "name": "Eksplanasi dpr",
+            "image": "placeholder.jpg",
+            "major_id": "2",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:24"
+        },
+        {
+            "id": "25",
+            "name": "Senyawa dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:24"
+        },
+        {
+            "id": "26",
+            "name": "Tabel Periodik dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:24"
+        },
+        {
+            "id": "27",
+            "name": "Asam Basa dpr",
+            "image": "placeholder.jpg",
+            "major_id": "3",
+            "grade_id": "3",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:59:25"
+        }
+    ],
+    "dpr_topic": [
+        {
+            "id": "1",
+            "dpr_id": "1",
+            "topic_id": "1",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "2",
+            "dpr_id": "2",
+            "topic_id": "2",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "3",
+            "dpr_id": "3",
+            "topic_id": "3",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "4",
+            "dpr_id": "4",
+            "topic_id": "4",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "5",
+            "dpr_id": "5",
+            "topic_id": "5",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "6",
+            "dpr_id": "6",
+            "topic_id": "6",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "7",
+            "dpr_id": "7",
+            "topic_id": "7",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "8",
+            "dpr_id": "8",
+            "topic_id": "8",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "9",
+            "dpr_id": "9",
+            "topic_id": "9",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "10",
+            "dpr_id": "10",
+            "topic_id": "10",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "11",
+            "dpr_id": "11",
+            "topic_id": "11",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "12",
+            "dpr_id": "12",
+            "topic_id": "12",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "13",
+            "dpr_id": "13",
+            "topic_id": "13",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "14",
+            "dpr_id": "14",
+            "topic_id": "14",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "15",
+            "dpr_id": "15",
+            "topic_id": "15",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "16",
+            "dpr_id": "16",
+            "topic_id": "16",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "17",
+            "dpr_id": "17",
+            "topic_id": "17",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "18",
+            "dpr_id": "18",
+            "topic_id": "18",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "19",
+            "dpr_id": "19",
+            "topic_id": "19",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "20",
+            "dpr_id": "20",
+            "topic_id": "20",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "21",
+            "dpr_id": "21",
+            "topic_id": "21",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "22",
+            "dpr_id": "22",
+            "topic_id": "22",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "23",
+            "dpr_id": "23",
+            "topic_id": "23",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "24",
+            "dpr_id": "24",
+            "topic_id": "24",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "25",
+            "dpr_id": "25",
+            "topic_id": "25",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "26",
+            "dpr_id": "26",
+            "topic_id": "26",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        },
+        {
+            "id": "27",
+            "dpr_id": "27",
+            "topic_id": "27",
+            "status": "1",
+            "created_at": "2020-11-12 12:49:32",
+            "updated_at": "2020-11-12 12:49:32"
+        }
+    ],
+    "topic": [
+        {
+            "id": "1",
+            "name": "Penjumlahan",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "2",
+            "name": "Pengurangan",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "3",
+            "name": "Perkalian",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "4",
+            "name": "Mengarang",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "5",
+            "name": "Puisi",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "6",
+            "name": "Pantun",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "7",
+            "name": "Fotosintesis",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "8",
+            "name": "Autotomi",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "9",
+            "name": "Perkembangbiakan",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "10",
+            "name": "Matriks",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "11",
+            "name": "Aljabar",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "12",
+            "name": "Bilangan Prima",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "13",
+            "name": "Deskripsi",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "14",
+            "name": "Definisi",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "15",
+            "name": "LHO",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "16",
+            "name": "Atom",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "17",
+            "name": "Reproduksi",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "18",
+            "name": "Tata Surya",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "19",
+            "name": "Himpunan",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "20",
+            "name": "Lingkaran",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "21",
+            "name": "Garis Singgung",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "22",
+            "name": "Perbedaan teks",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "23",
+            "name": "Rujukan",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "24",
+            "name": "Eksplanasi",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "25",
+            "name": "Senyawa",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "26",
+            "name": "Tabel Periodik",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        },
+        {
+            "id": "27",
+            "name": "Asam Basa",
+            "created_at": "2020-11-12 12:15:49",
+            "updated_at": "2020-11-12 12:15:49"
+        }
+    ]
+}
