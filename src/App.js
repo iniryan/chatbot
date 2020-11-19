@@ -165,7 +165,7 @@ class App extends Component {
             message: 'Terima kasih telah menggunakan layanan dari Mejakitabot.',
             end: true
           },
-        ]} />;
+        ]} />
       </ThemeProvider>
     )
   }
