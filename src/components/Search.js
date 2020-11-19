@@ -135,7 +135,7 @@ export default class Search extends Component {
     }
 
     render() {
-        const { loading, level, subject, result, results, topicFound } = this.state;
+        const { loading, result, results, topicFound } = this.state;
         return (
             <div style={{ width: '100%' }}>
                 { loading ? <Loading /> : (topicFound.length > 0 ? (
@@ -144,7 +144,7 @@ export default class Search extends Component {
                             <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
                                 <h3>{row.name}</h3>
                                 <small style={{ color: 'red' }}>{row.topic}</small>
-                                <img src={`/${row.image}`} style={{ width: '100%', height: 'auto' }} />
+                                <img src={`/${row.image}`} alt="img" style={{ width: '100%', height: 'auto' }} />
                             </div>
                         ))
                     })
@@ -154,7 +154,7 @@ export default class Search extends Component {
                             <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
                                 <h3>{row.name}</h3>
                                 <small style={{ color: 'red' }}>{row.topic}</small>
-                                <img src={`/${row.image}`} style={{ width: '100%', height: 'auto' }} />
+                                <img src={`/${row.image}`} alt="img" style={{ width: '100%', height: 'auto' }} />
                             </div>
                         ))
                     })) : (result.length > 0 ? `${result[0].keyword} ditemukan` : 'Mejakitabot tidak dapat menemukan apa yang kamu cari')))}

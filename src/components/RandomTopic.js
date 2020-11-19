@@ -19,7 +19,7 @@ export default class RandomTopic extends Component {
             <div style={{ width: '100%' }}>
                 <h3>{name}</h3>
                 <small style={{ color: 'red' }}>{category}</small>
-                <img src={`/${image}`} style={{ width: '100%', height: 'auto' }} />
+                <img src={`/${image}`} alt="img" style={{ width: '100%', height: 'auto' }} />
             </div>
         );
     }
