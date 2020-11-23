@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { ThemeProvider } from 'styled-components';
 import ChatBot from 'react-simple-chatbot';
+import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
 import Results from './components/Results';
 import Search from './components/Search';

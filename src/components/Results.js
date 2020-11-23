@@ -79,7 +79,7 @@ export default class Results extends Component {
                                 <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
                                     <h3>{row.name}</h3>
                                     <small style={{ color: 'red' }}>{row.topic}</small>
-                                    <img src={`/${row.image}`} alt="img" style={{ width: '100%', height: 'auto' }} />
+                                    <img src={`/${row.image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
                                 </div>
                             ))
                         })}

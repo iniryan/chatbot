@@ -21,6 +21,14 @@ export default class MultiSearch extends Component {
 
         let grade = []
         let major = []
+
+        keyword_grade.map(child_grade => {
+            if (search.value.trim().toLowerCase().includes(child_grade.keyword.trim().toLowerCase())) grade = [child_grade]
+        })
+        keyword_major.map(child_major => {
+            if (search.value.trim().toLowerCase().includes(child_major.keyword.trim().toLowerCase())) major = [child_major]
+        })
+
         search.value.trim().toLowerCase().split(/[\s,]+/).map(value => {
             keyword_grade.map(child_grade => {
                 if (child_grade.keyword.trim().toLowerCase() === value) grade = [child_grade]
@@ -114,7 +122,7 @@ export default class MultiSearch extends Component {
                                 <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
                                     <h3>{row.name}</h3>
                                     <small style={{ color: 'red' }}>{row.topic}</small>
-                                    <img src={`/${row.image}`} alt="img" style={{ width: '100%', height: 'auto' }} />
+                                    <img src={`/${row.image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
                                 </div>
                             ))
                         })}
