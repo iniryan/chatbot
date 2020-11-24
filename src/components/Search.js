@@ -86,13 +86,36 @@ export default class Search extends Component {
                     return splitTopic || false
                 }
             }))).filter(dpr => dpr),
+            (await Promise.all(topic.map(topic => {
+                let results = []
+                if (topic.name.toLowerCase().includes(search.value.toLowerCase()) || search.value.toLowerCase().includes(topic.name.toLowerCase())) {
+                    const dprTopics = dpr_topic.filter(dpr => dpr.topic_id == topic.id)
+                    const bcTopics = bc_topic.filter(bc => bc.topic_id == topic.id)
+
+                    dprTopics.map(dprTopic => {
+                        dpr.map(child_dpr => {
+                            if (child_dpr.id == dprTopic.id) {
+                                results = [...results, { topic: topic.name, name: child_dpr.name, image: child_dpr.image }]
+                            }
+                        })
+                    })
+
+                    bcTopics.map(bcTopic => {
+                        bc.map(child_bc => {
+                            if (child_bc.id == bcTopic.id) {
+                                results = [...results, { topic: topic.name, name: child_bc.name, image: child_bc.image }]
+                            }
+                        })
+                    })
+                }
+                return results.length > 0 ? results : false
+            }))).filter(topic => topic),
         ])
 
         const level = grade.length > 0 ? [grade[0]] : []
         const subject = major.length > 0 ? [major[0]] : []
         const result = grade.length > 0 ? [grade[0]] : (major.length > 0 ? [major[0]] : [])
         const multi = level.length > 0 && subject.length > 0
-        // const isTopic = level.length > 0 || subject.length > 0 ? false : (includes[0].length > 0 && includes[1].length > 0)
 
         const topicFound = await Promise.all([
             includes[0].map(row => {
@@ -112,7 +135,8 @@ export default class Search extends Component {
                     image: row.image,
                     topic: category ? (category.length > 0 ? category[0].name : null) : null
                 }
-            })
+            }),
+            ...includes[2]
         ])
 
         if (multi) {
@@ -160,7 +184,7 @@ export default class Search extends Component {
             if (multi) {
                 this.props.triggerNextStep({ trigger: 're_search' });
             } else {
-                if (topicFound[0].length > 0 || topicFound[1].length > 0) {
+                if (topicFound[0].length > 0 || topicFound[1].length > 0 || topicFound.length > 2) {
                     this.props.triggerNextStep({ trigger: 're_search' });
                 } else {
                     if (level.length > 0) {
@@ -184,15 +208,25 @@ export default class Search extends Component {
         return (
             <div style={{ width: '100%' }}>
                 { loading ? <Loading /> : (topicFound[0].length > 0 || topicFound[1].length > 0 ? (
-                    topicFound.map(bcdpr => {
-                        return bcdpr.map((row, i) => (
-                            <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
-                                <h3>{row.name}</h3>
-                                <small style={{ color: 'red' }}>{row.topic}</small>
-                                <img src={`/${row.image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
-                            </div>
-                        ))
+                    topicFound.map((bcdpr, i) => {
+                        if (i == 0 || i == 1) {
+                            return bcdpr.map((row, i) => (
+                                <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
+                                    <h3>{row.name}</h3>
+                                    <small style={{ color: 'red' }}>{row.topic}</small>
+                                    <img src={`/${row.image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
+                                </div>
+                            ))
+                        }
                     })
+                ) : (topicFound.length > 2 && topicFound[2].length > 0 ? (
+                    topicFound[2].map((row, i) => (
+                        <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
+                            <h3>{row.name}</h3>
+                            <small style={{ color: 'red' }}>{row.topic}</small>
+                            <img src={`/${row.image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
+                        </div>
+                    ))
                 ) : (results.length > 0 ?
                     (results.map(bcdpr => {
                         return bcdpr.map((row, i) => (
@@ -202,7 +236,7 @@ export default class Search extends Component {
                                 <img src={`/${row.image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
                             </div>
                         ))
-                    })) : (result.length > 0 ? `${result[0].keyword} ditemukan` : 'Mejakitabot tidak dapat menemukan apa yang kamu cari')))}
+                    })) : (result.length > 0 ? `${result[0].keyword} ditemukan` : 'Mejakitabot tidak dapat menemukan apa yang kamu cari'))))}
             </div>
         )
     }
