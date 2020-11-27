@@ -3,6 +3,7 @@ import { Loading } from 'react-simple-chatbot';
 import { keyword_grade, keyword_major } from '../dummy/data.json';
 import { bc, bc_topic, dpr, dpr_topic, topic } from '../dummy/data.json';
 import "../styles/accordion.css";
+import { v4 as uuidv4 } from 'uuid';
 
 export default class Search extends Component {
     constructor(props) {
@@ -209,52 +210,61 @@ export default class Search extends Component {
         return (
             <div style={{ width: '100%' }}>
                 { loading ? <Loading /> : (topicFound[0].length > 0 || topicFound[1].length > 0 ? (
-                    topicFound.map((bcdpr, i) => {
-                        if (i == 0 || i == 1) {
-                            return bcdpr.map((row, i) => (
-                                <div key={i + 1} style={{ paddingTop: 12 }}>
-                                    <nav className="accordion arrows" style={{}}>
-                                        <input
-                                        type="radio"
-                                        name="accordion"
-                                        id={`bcdpr-${i}-${i + 1}`}
-                                        />
-                                        <section className="box">
-                                        <label
-                                            className="box-title"
-                                            htmlFor={`bcdpr-${i}-${i + 1}`}
-                                        >
-                                            {row.name}
-                                        </label>
-                                        <label className="box-close" htmlFor="acc-close"></label>
-                                        <div className="box-content">
-                                            <small>{row.topic}</small>
-                                            <img
-                                            src={`/${row.image}`}
-                                            alt="img"
-                                            style={{ width: "100%", height: "100%" }}
-                                            />
-                                        </div>
-                                        </section>
-                                        <input type="radio" name="accordion" id="acc-close" />
-                                    </nav>
-                                </div>
-                            ))
-                        }
-                    })
+                    <div style={{}}>
+                    {topicFound.map((bcdpr, parentI) => {
+                        if(parentI == 0 || parentI == 1) {
+                      return bcdpr.map((row, i) => {
+                          const uuid = uuidv4()
+                          return (
+                          <div key={i + 1} style={{ paddingTop: 12 }}>
+                          <nav className="accordion arrows" style={{}}>
+                              <input
+                              type="radio"
+                              name="accordion"
+                              id={`bcdpr-${parentI}-${i + 1}-${uuid}`}
+                              />
+                              <section className="box">
+                              <label
+                                  className="box-title"
+                                  htmlFor={`bcdpr-${parentI}-${i + 1}-${uuid}`}
+                              >
+                                  {row.name}
+                              </label>
+                              <label
+                                  className="box-close"
+                                  htmlFor="acc-close"
+                              ></label>
+                              <div className="box-content">
+                                  <small>{row.topic}</small>
+                                  <img
+                                  src={`/${row.image}`}
+                                  alt="img"
+                                  style={{ width: "100%", height: "100%" }}
+                                  />
+                              </div>
+                              </section>
+                              <input type="radio" name="accordion" id="acc-close" />
+                          </nav>
+                          </div>
+                          )
+                      });
+                }})}
+                </div>
                 ) : (topicFound.length > 2 && topicFound[2].length > 0 ? (
-                    topicFound[2].map((row, i) => (
+                    topicFound[2].map((row, i) => {
+                        const uuid = uuidv4()
+                        return (
                         <div key={i + 1} style={{ paddingTop: 12 }}>
                             <nav className="accordion arrows" style={{}}>
                                 <input
                                 type="radio"
-                                name="accordion"
-                                id={`bcdpr-${i}-${i + 1}`}
+                                name="accordion"    
+                                id={`bcdpr-${i + 1}-${uuid}`}
                                 />
                                 <section className="box">
                                 <label
                                     className="box-title"
-                                    htmlFor={`bcdpr-${i}-${i + 1}`}
+                                    htmlFor={`bcdpr-${i + 1}-${uuid}`}
                                 >
                                     {row.name}
                                 </label>
@@ -271,39 +281,47 @@ export default class Search extends Component {
                                 <input type="radio" name="accordion" id="acc-close" />
                             </nav>
                         </div>
-                    ))
+                     ) })
                 ) : (results.length > 0 ?
-                    (results.map((bcdpr, parentI) => {
-                        return bcdpr.map((row, i) => (
-                            <div key={i + 1} style={{ paddingTop: 12 }}>
-                                <nav className="accordion arrows" style={{}}>
-                                    <input
-                                    type="radio"
-                                    name="accordion"
-                                    id={`bcdpr-${parentI}-${i + 1}`}
-                                    />
-                                    <section className="box">
-                                    <label
-                                        className="box-title"
-                                        htmlFor={`bcdpr-${parentI}-${i + 1}`}
-                                    >
-                                        {row.name}
-                                    </label>
-                                    <label className="box-close" htmlFor="acc-close"></label>
-                                    <div className="box-content">
-                                        <small>{row.topic}</small>
-                                        <img
-                                        src={`/${row.image}`}
-                                        alt="img"
-                                        style={{ width: "100%", height: "100%" }}
-                                        />
-                                    </div>
-                                    </section>
-                                    <input type="radio" name="accordion" id="acc-close" />
-                                </nav>
-                            </div>
-                        ))
-                    })) : (result.length > 0 ? `${result[0].keyword} ditemukan` : 'Mejakitabot tidak dapat menemukan apa yang kamu cari'))))}
+                    (<div style={{}}>
+                        {results.map((bcdpr, parentI) => {
+                          return bcdpr.map((row, i) => {
+                              const uuid = uuidv4()
+                              return (
+                              <div key={i + 1} style={{ paddingTop: 12 }}>
+                              <nav className="accordion arrows" style={{}}>
+                                  <input
+                                  type="radio"
+                                  name="accordion"
+                                  id={`bcdpr-${parentI}-${i + 1}-${uuid}`}
+                                  />
+                                  <section className="box">
+                                  <label
+                                      className="box-title"
+                                      htmlFor={`bcdpr-${parentI}-${i + 1}-${uuid}`}
+                                  >
+                                      {row.name}
+                                  </label>
+                                  <label
+                                      className="box-close"
+                                      htmlFor="acc-close"
+                                  ></label>
+                                  <div className="box-content">
+                                      <small>{row.topic}</small>
+                                      <img
+                                      src={`/${row.image}`}
+                                      alt="img"
+                                      style={{ width: "100%", height: "100%" }}
+                                      />
+                                  </div>
+                                  </section>
+                                  <input type="radio" name="accordion" id="acc-close" />
+                              </nav>
+                              </div>
+                              )
+                          });
+                          })}
+                    </div>) : (result.length > 0 ? `${result[0].keyword} ditemukan, tambahkan kata kunci lainnya` : 'Mejakitabot tidak dapat menemukan apa yang kamu cari'))))}
             </div>
         )
     }

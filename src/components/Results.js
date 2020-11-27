@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Loading } from "react-simple-chatbot";
 import { bc, bc_topic, dpr, dpr_topic, topic } from "../dummy/data.json";
 import "../styles/accordion.css";
+import { v4 as uuidv4 } from 'uuid';
 
 export default class Results extends Component {
   constructor(props) {
@@ -107,24 +108,26 @@ export default class Results extends Component {
             Berikut beberapa materi {subject.message} pada jenjang{" "}
             {level.message} yang Mejakitabot punya
             {results.map((bcdpr, parentI) => {
-              return bcdpr.map((row, i) => (
+              return bcdpr.map((row, i) => {
+                const uuid = uuidv4()
+                return (
                 <div key={i + 1} style={{ paddingTop: 12 }}>
                   <nav className="accordion arrows" style={{}}>
                     <input
                       type="radio"
                       name="accordion"
-                      id={`bcdpr-${parentI}-${i + 1}`}
+                      id={`bcdpr-${parentI}-${i + 1}-${uuid}`}
                     />
                     <section className="box">
                       <label
                         className="box-title"
-                        data-target={`bcdpr-${parentI}-${i + 1}`}
+                        htmlFor={`bcdpr-${parentI}-${i + 1}-${uuid}`}
                       >
                         {row.name}
                       </label>
                       <label
                         className="box-close"
-                        data-target="acc-close"
+                        htmlFor="acc-close"
                       ></label>
                       <div className="box-content">
                         <small>{row.topic}</small>
@@ -138,7 +141,8 @@ export default class Results extends Component {
                     <input type="radio" name="accordion" id="acc-close" />
                   </nav>
                 </div>
-              ));
+                )
+              });
             })}
           </div>
         ) : (
