@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Loading } from 'react-simple-chatbot';
 import { bc, bc_topic, dpr, dpr_topic, topic } from '../dummy/data.json';
+// import 'jquery/dist/jquery.slim';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle';
 
 export default class Results extends Component {
     constructor(props) {
@@ -83,6 +86,48 @@ export default class Results extends Component {
                                 </div>
                             ))
                         })}
+
+                        {/* <div className="accordion mt-2" id="accordionExample">
+                                    {results.map((bcdpr, parentI) => {
+                                        return bcdpr.map((row, i) => (
+                                        <div key={i + 1} className="card">
+                                            <div
+                                            className="card-header justify-content-center d-flex"
+                                            id="headingOne"
+                                            >
+                                            <h2 className="mb-0">
+                                                <button
+                                                className="btn btn-link"
+                                                type="button"
+                                                data-toggle="collapse"
+                                                data-target={`#bcdpr-${parentI}-${i + 1}`}
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne"
+                                                >
+                                                {row.name}
+                                                </button>
+                                            </h2>
+                                            </div>
+
+                                            <div
+                                            id={`bcdpr-${parentI}-${i + 1}`}
+                                            className="collapse"
+                                            aria-labelledby="headingOne"
+                                            data-parent="#accordionExample"
+                                            >
+                                            <div className="card-body text-dark text-center">
+                                                <small>{row.topic}</small>
+                                                <img
+                                                src={`/${row.image}`}
+                                                alt="img"
+                                                style={{ width: "100%", height: "100%" }}
+                                                />
+                                            </div>
+                                            </div>
+                                        </div>
+                                        ));
+                                    })}
+                                    </div> */}
                     </div>
 
                 ) : (
