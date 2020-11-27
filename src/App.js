@@ -61,7 +61,7 @@ class App extends Component {
             id: 'random_topic',
             component: <RandomTopic item={{ name: fixed.name, image: fixed.image, category: category ? (category.length > 0 ? category[0].name : null) : null }} />,
             waitAction: true,
-            asMessage: true,
+            // asMessage: true,
             trigger: 'rewind'
           },
           {
@@ -103,7 +103,7 @@ class App extends Component {
             id: 'search_data',
             component: <Search />,
             waitAction: true,
-            asMessage: true,
+            // asMessage: true,
           },
           {
             id: 'search_level',
@@ -130,14 +130,14 @@ class App extends Component {
             id: 'multi_search',
             component: <MultiSearch />,
             waitAction: true,
-            asMessage: true,
+            // asMessage: true,
             trigger: 'rewind'
           },
           {
             id: 'results',
             component: <Results />,
             waitAction: true,
-            asMessage: true,
+            // asMessage: true,
             trigger: 'rewind'
           },
           {

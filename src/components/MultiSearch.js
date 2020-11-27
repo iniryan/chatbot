@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Loading } from 'react-simple-chatbot';
 import { bc, bc_topic, dpr, dpr_topic, topic, keyword_grade, keyword_major } from '../dummy/data.json';
+import '../styles/accordion.css';
 
 export default class MultiSearch extends Component {
     constructor(props) {
@@ -116,17 +117,40 @@ export default class MultiSearch extends Component {
         return (
             <div style={{ width: '100%' }}>
                 { loading ? <Loading /> : results.length > 0 ? (
-                    <div>
-                        {results.map(bcdpr => {
-                            return bcdpr.map((row, i) => (
-                                <div key={i} style={{ borderTop: '1px solid white', paddingBottom: '1rem' }}>
-                                    <h3>{row.name}</h3>
-                                    <small style={{ color: 'red' }}>{row.topic}</small>
-                                    <img src={`/${row.image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
-                                </div>
-                            ))
-                        })}
-                    </div>
+                    <div style={{}}>
+                      {results.map((bcdpr, parentI) => {
+                          return bcdpr.map((row, i) => (
+                              <div key={i +1} style={{paddingTop: 12}}>
+                            <nav className="accordion arrows" style={{ }}>
+                            <input
+                              type="radio"
+                              name="accordion"
+                              id={`bcdpr-${parentI}-${i + 1}`}
+                            />
+                            <section className="box">
+                              <label
+                                className="box-title"
+                                htmlFor={`bcdpr-${parentI}-${i + 1}`}
+                                
+                              >
+                                {row.name}
+                              </label>
+                              <label className="box-close" htmlFor="acc-close"></label>
+                              <div className="box-content">
+                                <small>{row.topic}</small>
+                                <img
+                                  src={`/${row.image}`}
+                                  alt="img"
+                                  style={{ width: "100%", height: "100%" }}
+                                />
+                              </div>
+                            </section>
+                            <input type="radio" name="accordion" id="acc-close" />
+                    </nav>
+                          </div>
+                        ));
+                      })}
+                  </div>
 
                 ) : (
                         <div>Maaf yah, Mejakitabot tidak dapat menemukan apa yang kamu cari</div>
