@@ -59,7 +59,7 @@ class App extends Component {
           },
           {
             id: 'random_topic',
-            component: <RandomTopic item={{ name: fixed.name, image: fixed.image, category: category ? (category.length > 0 ? category[0].name : null) : null }} />,
+            component: <RandomTopic item={{ name: fixed.name, image: fixed.image, link: fixed.link, category: category ? (category.length > 0 ? category[0].name : null) : null }} />,
             waitAction: true,
             // asMessage: true,
             trigger: 'rewind'

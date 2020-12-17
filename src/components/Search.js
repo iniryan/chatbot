@@ -48,7 +48,7 @@ export default class Search extends Component {
         const includes = await Promise.all([
             (await Promise.all(bc.map(child_bc => {
                 if (child_bc.name.toLocaleLowerCase() == search.value.trim().toLowerCase()) {
-                    return { id: child_bc.id, name: child_bc.name, image: child_bc.image }
+                    return { id: child_bc.id, name: child_bc.name, image: child_bc.image, link: child_bc.link }
                 } else {
                     let splitTopic = null
 
@@ -60,7 +60,7 @@ export default class Search extends Component {
                     values.map(value => {
                         child_bc.name.trim().toLowerCase().split(/[\s,]+/).map(topic_word => {
                             if (!['bc', 'dpr'].includes(topic_word) && topic_word == value) {
-                                splitTopic = { id: child_bc.id, name: child_bc.name, image: child_bc.image }
+                                splitTopic = { id: child_bc.id, name: child_bc.name, image: child_bc.image, link: child_bc.link }
                             }
                         })
                     })
@@ -69,7 +69,7 @@ export default class Search extends Component {
             }))).filter(bc => bc),
             (await Promise.all(dpr.map(child_dpr => {
                 if (child_dpr.name.toLocaleLowerCase() == search.value.trim().toLowerCase()) {
-                    return { id: child_dpr.id, name: child_dpr.name, image: child_dpr.image }
+                    return { id: child_dpr.id, name: child_dpr.name, image: child_dpr.image, link: child_dpr.link }
                 } else {
                     let splitTopic = null
 
@@ -81,7 +81,7 @@ export default class Search extends Component {
                     values.map(value => {
                         child_dpr.name.trim().toLowerCase().split(/[\s,]+/).map(topic_word => {
                             if (!['bc', 'dpr'].includes(topic_word) && topic_word == value) {
-                                splitTopic = { id: child_dpr.id, name: child_dpr.name, image: child_dpr.image }
+                                splitTopic = { id: child_dpr.id, name: child_dpr.name, image: child_dpr.image, link: child_dpr.link }
                             }
                         })
                     })
@@ -97,7 +97,7 @@ export default class Search extends Component {
                     dprTopics.map(dprTopic => {
                         dpr.map(child_dpr => {
                             if (child_dpr.id == dprTopic.id) {
-                                results = [...results, { topic: topic.name, name: child_dpr.name, image: child_dpr.image }]
+                                results = [...results, { topic: topic.name, name: child_dpr.name, image: child_dpr.image, link: child_dpr.link }]
                             }
                         })
                     })
@@ -105,7 +105,7 @@ export default class Search extends Component {
                     bcTopics.map(bcTopic => {
                         bc.map(child_bc => {
                             if (child_bc.id == bcTopic.id) {
-                                results = [...results, { topic: topic.name, name: child_bc.name, image: child_bc.image }]
+                                results = [...results, { topic: topic.name, name: child_bc.name, image: child_bc.image, link: child_bc.link }]
                             }
                         })
                     })
@@ -126,6 +126,7 @@ export default class Search extends Component {
                 return {
                     name: row.name,
                     image: row.image,
+                    link: row.link,
                     topic: category ? (category.length > 0 ? category[0].name : null) : null
                 }
             }),
@@ -135,6 +136,7 @@ export default class Search extends Component {
                 return {
                     name: row.name,
                     image: row.image,
+                    link: row.link,
                     topic: category ? (category.length > 0 ? category[0].name : null) : null
                 }
             }),
@@ -151,6 +153,7 @@ export default class Search extends Component {
                             return {
                                 name: row.name,
                                 image: row.image,
+                                link: row.link,
                                 topic: category ? (category.length > 0 ? category[0].name : null) : null
                             }
                         }
@@ -167,6 +170,7 @@ export default class Search extends Component {
                             return {
                                 name: row.name,
                                 image: row.image,
+                                link: row.link,
                                 topic: category ? (category.length > 0 ? category[0].name : null) : null
                             }
                         }
@@ -241,6 +245,7 @@ export default class Search extends Component {
                                   alt="img"
                                   style={{ width: "100%", height: "100%" }}
                                   />
+                                  <small><a href={row.link} style={{textDecoration: 'none'}}>lihat lebih banyak</a></small>
                               </div>
                               </section>
                               <input type="radio" name="accordion" id="acc-close" />
@@ -276,6 +281,7 @@ export default class Search extends Component {
                                     alt="img"
                                     style={{ width: "100%", height: "100%" }}
                                     />
+                                  <small><a href={row.link} style={{textDecoration: 'none'}}>lihat lebih banyak</a></small>
                                 </div>
                                 </section>
                                 <input type="radio" name="accordion" id="acc-close" />
@@ -313,6 +319,7 @@ export default class Search extends Component {
                                       alt="img"
                                       style={{ width: "100%", height: "100%" }}
                                       />
+                                      <small><a href={row.link} style={{textDecoration: 'none'}}>lihat lebih banyak</a></small>
                                   </div>
                                   </section>
                                   <input type="radio" name="accordion" id="acc-close" />

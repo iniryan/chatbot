@@ -14,12 +14,13 @@ export default class RandomTopic extends Component {
     }
 
     render() {
-        const { name, image, category } = this.props.item;
+        const { name, image, category, link } = this.props.item;
         return (
             <div style={{ width: '100%' }}>
                 <h3>{name}</h3>
                 <small style={{ color: 'red' }}>{category}</small>
                 <img src={`/${image}`} alt='img' style={{ width: '100%', height: 'auto' }} />
+                <small><a href={link} style={{textDecoration: 'none'}}>lihat lebih banyak</a></small>
             </div>
         );
     }

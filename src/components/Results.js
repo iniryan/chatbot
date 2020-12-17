@@ -39,6 +39,7 @@ export default class Results extends Component {
                 return {
                   name: row.name,
                   image: row.image,
+                  link: row.link,
                   topic: category
                     ? category.length > 0
                       ? category[0].name
@@ -69,6 +70,7 @@ export default class Results extends Component {
                 return {
                   name: row.name,
                   image: row.image,
+                  link: row.link,
                   topic: category
                     ? category.length > 0
                       ? category[0].name
@@ -130,12 +132,13 @@ export default class Results extends Component {
                         htmlFor="acc-close"
                       ></label>
                       <div className="box-content">
-                        <small>{row.topic}</small>
+                        <small>{row.topic}</small><br/>
                         <img
                           src={`/${row.image}`}
                           alt="img"
                           style={{ width: "100%", height: "100%" }}
                         />
+                        <small><a href={row.link} style={{textDecoration: 'none'}}>lihat lebih banyak</a></small>
                       </div>
                     </section>
                     <input type="radio" name="accordion" id="acc-close" />
