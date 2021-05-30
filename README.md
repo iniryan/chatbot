@@ -11,7 +11,7 @@ Chatbot Prototype is a prototype feature for E-learning website named mejakita.c
 #### Technologies
 
 - This project was created using react-simple-chatbot library from [this](https://lucasbassetti.com.br/react-simple-chatbot/).
-- React Js v17.0.1
+- ReactJs v17.0.1
 
 ---
 
