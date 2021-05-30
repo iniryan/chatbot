@@ -1,6 +1,6 @@
 # Chatbot Prototype
 
-![Project Image](project-image-url)
+![Project Image](assets/image.png)
 
 ---
 
